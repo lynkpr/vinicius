@@ -1,0 +1,332 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+.container{
+	padding-top: 50px;
+	padding-bottom: 50px; 
+}
+/*---------------------------------------------------------------------
+--------------------------------MENU---------------------------------------*/
+body .navbar-default{
+	border-radius: 0;
+	border:0;
+	margin: 0;
+	opacity: .9;
+}
+
+.navbar-default .container{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+body .navbar-default .navbar-header .navbar-brand{/*Page's name*/
+	font-size: 32px;
+	color: #a00000;
+	letter-spacing: 2px;
+}
+
+body .navbar-default .navbar-nav li a{/*Categories: Color, size*/
+	color: #a00000;
+	font-size: 18px;
+	letter-spacing: 3px;
+	border-radius: 4px;
+}
+
+body .navbar-default .navbar-nav li.active a,
+body .navbar-default .navbar-nav li.active a:hover,
+body .navbar-default .navbar-nav li.active a:focus{/*Categories's events*/
+	background-color: #a00000;
+	color: #f8f8f8;
+}
+
+/*---------------------------------------------------------------------
+--------------------------------HOME AND FORMULARY---------------------------------------*/
+
+#home{ /*PANEL 1 - HOME*/
+
+	background-image: url("../img/pexels-photo-209151.jpeg"); /*Background image PARALLAX*/
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	position: relative;
+}
+.overlay {/*BACKGROUND COLOR WITH OPACITY OVER THE BG IMAGE*/
+	background: linear-gradient(to right, #600000 10%, #680000 90%);/*Brown, Darker Brown*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: .9;
+}
+
+.home-panel {
+
+	position: relative;
+}
+.home-panel #info h2{/*STYLING THE HEADER*/
+
+	font-weight: 600;
+	font-size: 50px;
+	margin-top: 80px;
+	margin-bottom: 30px; 
+	color: #fff;
+}
+.home-panel #info ul {/*MARGIN TO THE LIST*/
+	margin-bottom: 40px;
+}
+.home-panel #info ul li {/*COLOR WHITE AND FONT SIZE TO THE LIST*/
+
+	font-size: 18px;
+	color: #fff;
+
+}
+
+.home-panel #info .btn {/*MODIFYING THE BUTTON*/
+
+	border-radius: 6px;
+	padding: 6px 18px;
+	letter-spacing: 4px;
+	min-width: 170px;
+	font-size: 16px;
+}
+.home-panel #info .btn-default {/*STYLING THE BUTTON*/
+	background-color: transparent;
+	color: #fff;/*WHITE*/
+	border-color: #fff;/*WHITE*/
+	transition: .3S ease-in-out;
+}
+.home-panel #info .btn-default:hover, .home-panel #info .btn-default:active, 
+.home-panel #info .btn-default:active:hover, 
+.home-panel #info .home-panel #info .btn-default:focus{ /*STYLING EVENTS "HOVER, ACTIVE, HOVER:ACTIVE AND FOCUS*/
+	background-color: #fff;/*WHITE*/
+	color: #600000;/*BROWN*/
+	border-color: #fff;/*WHITE*/
+}
+
+#form1 {
+	margin-top: 40px;
+	background-color: #a00000;
+	position: relative;
+	border-radius: 5px;
+	padding: 30px;
+	padding-bottom: 40px;
+}
+#form1 h3 {/*HEADER*/
+	color: #fff;
+	font-size: 33px;
+	margin-bottom: 35px;
+}
+
+#form1 form .form-group{/*SPACE BETWEEN INPUTS*/
+	margin-bottom: 32px;
+}
+
+#form1 #gender input[type="radio"]{/*DISAPEAR THE RADIO INPUT'S CIRCLE*/
+	display: none;
+}
+
+#form1 form .form-group input[type="text"],
+#form1 form .form-group input[type="email"] {/*STYLING THE INPUTS FIELD*/
+	font-size: 16px;
+	color: #fff;
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #fff;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#gender label {/*STYLING THE RADIO'S LABEL*/
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	position: relative;
+	padding: 5px 15px 5px 51px;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: .5s;
+}
+
+#gender label:hover {
+	background-color: rgba(255,255,255, .1);
+}
+
+#gender label::before {/*REPLACES THE CIRCLE OF THE INPUT FOR A CUSTOM CIRCLE*/
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	left: 15px;
+	position: absolute;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	background: none;
+}
+
+#gender input[type="radio"]:checked + label:before{/*CUSTOM CIRCLE DISAPEAR*/
+	display: none;
+}
+
+#gender input[type="radio"]:checked + label{/*CHANGING THE STYLING OF THE LABEL ONCE SELECTED THE GENDER*/
+	padding: 2px 15px;
+	background: #fff;
+	border-radius: 2px;
+	color: #a00000;
+}
+
+#form1 form button {/*BUTTON OF THE FORM*/
+	width: 100%;
+}
+#form1 form .btn {	
+
+	font-size: 16px;
+	font-weight: 200px;
+	letter-spacing: 3px;
+}
+#form1 form .btn-danger {
+
+	background-color: transparent;
+	border-color: #fff;
+	transition: .3s ease-in-out;
+}
+#form1 form .btn-danger:hover{
+
+	background-color: #fff;
+	color: #600000;
+}
+#form1 form .btn-danger.focus, #form1 form .btn-danger:focus {
+	color: #600000;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+/*-------------------------------------------------------------------*/
+/*---------------------------ABOUT SECTION------------------------*/
+
+#about .row h2{/*HEADER*/
+	color: #a00000;
+	font-size: 42px;
+	margin-bottom: 70px;
+	letter-spacing: 3px;
+}
+
+#about .row .col-sm-3 .icon-round-brush,
+#about .row .col-sm-3 .icon-credit,
+#about .row .col-sm-3 .icon-users,
+#about .row .col-sm-3 .icon-shopping-cart{/*CUSTOMISING THE ICONS*/
+	font-size: 38px;
+	color: #a00000;
+}
+
+#about .row .col-sm-3 h3 {/*HEADER OF THE DESCRIPTION*/
+	font-size: 28px;
+	color: #a00000;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#about .row .col-sm-3 .about{/*CHANGING THE FONT OF THE DESCRIPTION*/
+	color: #a00000;
+	font-size: 16px;
+	line-height: 1.812313423;
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------TESTIMONIAL SECTION-----------------------*/
+
+#testimonials{/*PARALLAX*/
+
+	background-image: url(../img/pexels-photo-541523.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+	padding: 50px 0;
+
+}
+
+#comment .row .header h3{/*HEADER*/
+	margin: 0;
+	font-size: 40px;
+	margin-bottom: 25px;
+	color: #fff;
+	letter-spacing: 3px;
+}
+
+#comment .row .header p {/*SECOND HEADER*/
+	color: #fff;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 25px;
+	max-width: 940px;
+	display: inline-block;
+
+}
+
+#comment .row .owl-carousel .item .user-img div{/*CUSTOMASING THE USER IMG*/
+	max-width: 111px;
+	max-height: 110px;
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	
+}
+
+#comment .row .owl-carousel .item .user-img p {/*USER'S DESCRIPTION*/
+	color :#fff;
+	font-size: 16px;
+}
+
+#comment .row .owl-carousel .item .comment {/*USER'S COMMENT*/
+	color: #fff;
+	font-size: 16px;
+	margin-top: 7%;
+	line-height: 30px;
+	font-style: italic;
+}
+
+#comment .row .owl-carousel .owl-dots .owl-dot span {/*PERSONALISING THE SLIDER'S BUTTONS*/
+	width: 13px;
+	height: 13px;
+}
+
+#comment .row .owl-carousel .owl-dots .owl-dot.active span{/*CHANGING COLOR OF THE BUTTON WHEN IS ACTIVE*/
+
+	background-color: #a00000;
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------FOOTER AND SOCIAL MEDIA-------------------*/
+
+
+footer{
+
+	padding: 45px;
+	color: #a00000;
+}
+
+
+footer .social-media p{
+	color: #a00000;
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+footer .social-media a{
+	color: #680000;
+	font-size: 29px;
+}
+
+footer .social-media a:hover, footer .social-media a:active, footer .social-media a:focus{
+	text-decoration: none;
+	color: #a00000;
+}
+
+footer p{
+	margin-top: 25px;
+	font-weight: 500;
+}
